@@ -338,4 +338,7 @@ input{
     from { transform: translateX(100%); }
     to { transform: translateX(-100%); }
 }
-  
+#user-list{
+    overflow: auto;
+    width: 100%;
+}
