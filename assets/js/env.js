@@ -1,5 +1,5 @@
 const environment = {
     production: true,
     apiDev: "http://localhost:3000",
-    apiProd: "http://api.monxin.vn"
+    apiProd: "https://api.monxin.vn"
 };
