@@ -1,0 +1,341 @@
+body{
+    background-color: #2B2B38;
+    -moz-animation: fadein 500ms ease-in;
+    -webkit-animation: fadein 500ms ease-in;
+    -o-animation: fadein 500ms ease-in;
+    animation: fadein 500ms ease-in;
+    padding: 0;
+    margin: 0;
+}
+#main, #login-page, #register-page, #users-page{
+    width: 100%;
+    height: 100%;
+}
+#users-page{
+    padding-top: 30px;
+}
+.flex-1{
+    flex: 1;
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-from-left-to-right #main{
+    background-color: #2B2B38;
+}
+.animate-from-left-to-right2 #main{
+    background-color: #ff003c;
+}
+.animate-from-left-to-right {
+    -webkit-animation: animate-from-left-to-right-kf 500ms;
+    -moz-animation: animate-from-left-to-right-kf 500ms;
+    -o-animation: animate-from-left-to-right-kf 500ms;
+    animation: animate-from-left-to-right-kf 500ms;
+}
+.animate-from-left-to-right2 {
+    -webkit-animation: animate-from-left-to-right2-kf 500ms;
+    -moz-animation: animate-from-left-to-right2-kf 500ms;
+    -o-animation: animate-from-left-to-right2-kf 500ms;
+    animation: animate-from-left-to-right2-kf 500ms;
+}
+@-webkit-keyframes animate-from-left-to-right2-kf {
+    from {
+        -webkit-transform:translateX(-100%);
+    }
+    to {
+        -webkit-transform:translateX(0%);
+    }
+}
+@-moz-keyframes animate-from-left-to-right2-kf {
+    from {
+        -moz-transform:translateX(-100%);
+    }
+    to {
+        -moz-transform:translateX(0%);
+    }
+}
+@-o-keyframes animate-from-left-to-right2-kf {
+    from {
+        -o-transform:translateX(-100%);
+    }
+    to {
+        -o-transform:translateX(0%);
+    }
+}
+@keyframes animate-from-left-to-right2-kf {
+    from {
+        transform:translateX(-100%);
+    }
+    to {
+        transform:translateX(0%);
+    }
+}
+@-webkit-keyframes animate-from-left-to-right-kf {
+    from {
+        -webkit-transform:translateX(-100%);
+    }
+    to {
+        -webkit-transform:translateX(0%);
+    }
+}
+@-moz-keyframes animate-from-left-to-right-kf {
+    from {
+        -moz-transform:translateX(-100%);
+    }
+    to {
+        -moz-transform:translateX(0%);
+    }
+}
+@-o-keyframes animate-from-left-to-right-kf {
+    from {
+        -o-transform:translateX(-100%);
+    }
+    to {
+        -o-transform:translateX(0%);
+    }
+}
+@keyframes animate-from-left-to-right-kf {
+    from {
+        transform:translateX(-100%);
+    }
+    to {
+        transform:translateX(0%);
+    }
+}
+.auth-wapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.auth-wapper .card{
+    width: 500px;
+    max-width: 100%;
+}
+.card{
+    word-wrap: break-word;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px 0 rgb(0 0 0 / 10%);
+}
+.content {
+    padding: 20px 15px;
+}
+h4 {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 0.5rem;
+}
+#login-page, #register-page{
+    
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: rgb(0, 155, 83);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    box-shadow: 0 4px 24px 0 rgb(0 0 0 / 10%);
+}
+
+#snackbar.error {
+    background-color: rgb(155, 0, 0);
+    color: #fff;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: snackbarfadein 0.5s, snackbarfadeout 0.5s 2.5s;
+    animation: snackbarfadein 0.5s, snackbarfadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes snackbarfadein {
+    from {
+        bottom: 0; 
+        opacity: 0;
+    } 
+    to {
+        bottom: 30px; 
+        opacity: 1;
+    }
+}
+
+@keyframes snackbarfadein {
+    from {
+        bottom: 0; 
+        opacity: 0;
+    }
+    to {
+        bottom: 30px; 
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes snackbarfadeout {
+    from {
+        bottom: 30px; 
+        opacity: 1;
+    } 
+    to {
+        bottom: 0; 
+        opacity: 0;
+    }
+}
+
+@keyframes snackbarfadeout {
+    from {
+        bottom: 30px; 
+        opacity: 1;
+    }
+    to {
+        bottom: 0; 
+        opacity: 0;
+    }
+}
+#loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    display: none;
+}
+#loader.show{
+    display: block;
+}
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.table td{
+    background: #008ebb;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 16px;
+}
+.pagination .paging-btn {
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pagination{
+    text-align: center;
+    padding: 8px 0;
+}
+
+.pagination .paging-btn.active {
+    background-color: #01526d;
+    color: #fff;
+}
+button, .btn{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+.add-btn{
+    float: right;
+}
+button.danger, .btn.danger{
+    background-color: #f44336;
+}
+input{
+    padding: 8px;
+}
+.mb-2{
+    margin-bottom: 0.5rem;
+}
+.label{
+    align-items: center;
+    display: flex;
+}
+.marquee{
+    top: 0;
+    color: #fff;
+    position: fixed;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    animation: marquee 30s linear infinite;
+    padding: 8px 0px;
+}
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+  
